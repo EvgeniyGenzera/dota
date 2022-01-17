@@ -12,19 +12,18 @@ const Hero = () => {
         axios
         .get("https://api.opendota.com/api/heroStats")
         .then((response) => {
-            setHero(response.data.filter((hero) => hero.id === parseInt(location.pathname.substr(1)))[0])
-            console.log(hero); 
+            setHero(response.data.filter((hero) => hero.id === parseInt(location.pathname.substring(1)))[0])
         })
         .catch((error) => {
             console.log(`We have a server error`, error);
         });
     }
     return (
-        <div className='single-hero'>
-            <a className='single-hero__homeLink' href='/'>Go to Home Page</a>
-            <h1 className='single-hero__title'>{hero.localized_name}</h1>
+        <div className='hero-page'>
+            <a className='hero-page__homeLink' href='/'>Go to Home Page</a>
+            <h1 className='hero-page__title'>{hero.localized_name}</h1>
             <img src={`https://api.opendota.com${hero.img}`} alt="hero" />
-            <ul className='single-hero__list'>
+            <ul className='hero-page__list'>
                 <li className='specifications'>Base Health - {hero.base_health}</li>
                 <li className='specifications'>Base Health Regen - {hero.base_health_regen}</li>
                 <li className='specifications'>Base Mana Regen - {hero.base_mana_regen}</li>

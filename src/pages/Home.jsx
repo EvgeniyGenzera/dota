@@ -29,8 +29,8 @@ const Home = () => {
             </form>
             <div className='hero-table'>
                 {
-                    heroes.length > 0 && abilities.map((abiliti, index) => (
-                        <HeroTable key={index} heroes={heroes} abiliti={abiliti} search={search}/>
+                    heroes.length > 0 && abilities.map((ability, index) => (
+                        <HeroTable key={index} heroes={heroes} ability={ability} search={search}/>
                     ))
                 }
             </div>
