@@ -1,140 +1,140 @@
-@import "~normalize.css/normalize.css";
-body{
-  background: silver;
+@import '~normalize.css/normalize.css';
+body {
+	background: silver;
 }
-.hero-table{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
-  grid-gap: 50px;
+.hero-table {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	grid-gap: 50px;
 }
-.hero-list{
-    display: grid;
-    grid-template-columns: repeat(4, 150px);
-    grid-gap: 20px;
-    padding: 20px;
-    margin: 0;
+.hero-list {
+	display: grid;
+	grid-template-columns: repeat(4, 150px);
+	grid-gap: 20px;
+	padding: 20px;
+	margin: 0;
 
-    &__title{
-      grid-column-start: 1;
-      grid-column-end: 5;
-      margin: 0;
-    }
+	&__title {
+		grid-column-start: 1;
+		grid-column-end: 5;
+		margin: 0;
+	}
 
-    .active a{
-      box-sizing: border-box;
-      transition: .3s;
-      color: blue;
-      font-size: 18px;
-      img{
-        max-width: 150px;
-      }
-      span{
-        color: blue;
-        border: 1px solid blue;
-        width: 100%;
-        display: block;
-      }
-    }
+	.active a {
+		box-sizing: border-box;
+		transition: 0.3s;
+		color: blue;
+		font-size: 18px;
+		img {
+			max-width: 150px;
+		}
+		span {
+			color: blue;
+			border: 1px solid blue;
+			width: 100%;
+			display: block;
+		}
+	}
 
-    &__hero{
-      list-style: none;
-      &:hover{
-        cursor: pointer;
-        transition: .3s;
-        span{
-          color: blue;
-          border-bottom: 1px solid blue;
-        }
-      }
-    }
-    .single-hero{
-      text-decoration: none;
-      color: #000;
-      display: flex;
-      padding-bottom: 10px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      justify-content: flex-start;
-      position: relative;
-      max-width: 150px;
-      max-height: 150px;
-      &:hover{
-        color: blue;
-        font-size: 18px;
-      }
-      &__name{
-        color: #000;
-        font-size: 20px;
-        text-align: center;
-      }
-      &__img{ 
-        max-width: 100px; 
-        width: 100%;
-        height: 100%;
-      }
-    }
+	&__hero {
+		list-style: none;
+		&:hover {
+			cursor: pointer;
+			transition: 0.3s;
+			span {
+				color: blue;
+				border-bottom: 1px solid blue;
+			}
+		}
+	}
+	.single-hero {
+		text-decoration: none;
+		color: #000;
+		display: flex;
+		padding-bottom: 10px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		justify-content: flex-start;
+		position: relative;
+		max-width: 150px;
+		max-height: 150px;
+		&:hover {
+			color: blue;
+			font-size: 18px;
+		}
+		&__name {
+			color: #000;
+			font-size: 20px;
+			text-align: center;
+		}
+		&__img {
+			max-width: 100px;
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
-.search{
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  &__field{
-    background: #f3f3f3;
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    outline: none;
-    width: 100%;
-    max-width: 500px;
-  }
-  &__btn{
-    margin-left: 20px;
-    border: none;
-    background: #f3f3f3;
-    padding: 0 10px;
-    border-radius: 10px;
-    &:hover{
-      cursor: pointer;
-    }
-  }
+.search {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	&__field {
+		background: #f3f3f3;
+		border: none;
+		border-radius: 10px;
+		padding: 20px;
+		outline: none;
+		width: 100%;
+		max-width: 500px;
+	}
+	&__btn {
+		margin-left: 20px;
+		border: none;
+		background: #f3f3f3;
+		padding: 0 10px;
+		border-radius: 10px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
 }
-.hero-page{
-  padding: 20px;
+.hero-page {
+	padding: 20px;
 
-  &__homeLink{
-    background: blue;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 20px;
-  }
+	&__homeLink {
+		background: blue;
+		padding: 10px;
+		text-decoration: none;
+		color: #fff;
+		margin-bottom: 20px;
+	}
 
-  &__title{ 
-    margin: 20px 0 20px 0;
-  }
+	&__title {
+		margin: 20px 0 20px 0;
+	}
 
-  &__list{
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-gap: 10px;
+	&__list {
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-gap: 10px;
 
-    .specifications{
-      list-style: none;
-    }
-  }
+		.specifications {
+			list-style: none;
+		}
+	}
 }
-.str{
-  border: 1px solid red;
-}
-
-.agi{
-  border: 1px solid green;
+.str {
+	border: 1px solid red;
 }
 
-.int{
-  border: 1px solid  blue;
+.agi {
+	border: 1px solid green;
+}
+
+.int {
+	border: 1px solid blue;
 }

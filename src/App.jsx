@@ -4,14 +4,14 @@ import Hero from './pages/Hero';
 import './App.scss';
 
 function App() {
-  return (
-    <>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/:hero' element={<Hero/>}/>
-      </Routes>
-    </>
-  );
+	return (
+		<>
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/:hero" element={<Hero />} />
+			</Routes>
+		</>
+	);
 }
 
 export default App;
