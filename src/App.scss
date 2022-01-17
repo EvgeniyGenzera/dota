@@ -11,9 +11,9 @@ body {
 }
 .hero-list {
 	display: grid;
-	grid-template-columns: repeat(4, 150px);
-	grid-gap: 20px;
-	padding: 20px;
+	grid-template-columns: repeat(4, 100px);
+	grid-gap: 10px;
+	padding: 10px;
 	margin: 0;
 
 	&__title {
@@ -28,7 +28,7 @@ body {
 		color: blue;
 		font-size: 18px;
 		img {
-			max-width: 150px;
+			max-width: 100px;
 		}
 		span {
 			color: blue;
@@ -59,8 +59,6 @@ body {
 		align-items: center;
 		justify-content: flex-start;
 		position: relative;
-		max-width: 150px;
-		max-height: 150px;
 		&:hover {
 			color: blue;
 			font-size: 18px;
@@ -71,7 +69,7 @@ body {
 			text-align: center;
 		}
 		&__img {
-			max-width: 100px;
+			max-width: 75px;
 			width: 100%;
 			height: 100%;
 		}
