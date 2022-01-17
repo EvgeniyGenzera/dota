@@ -1,0 +1,103 @@
+@import "~normalize.css/normalize.css";
+.hero-table{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  grid-gap: 50px;
+}
+.hero-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    padding: 0;
+    margin: 0;
+
+    &__title{
+      grid-column-start: 1;
+      grid-column-end: 5;
+
+    }
+
+    .active{
+      background: yellow;
+      font-size: 20px;
+      transition: .3s;
+    }
+
+    &__hero{
+      list-style: none;
+      &:hover{
+        background: yellow;
+        cursor: pointer;
+        font-size: 20px;
+        transition: .3s;
+      }
+    }
+    .single-hero{
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+    }
+}
+.search{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  &__field{
+    background: #f3f3f3;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+  }
+  &__btn{
+    margin-left: 20px;
+    border: none;
+    background: #f3f3f3;
+    padding: 0 10px;
+    border-radius: 10px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+.str{
+  background: red;
+}
+.agi{
+  background: green;
+}
+.int{
+  background: blue;
+}
+.single-hero{
+  padding: 20px; 
+
+  &__homeLink{
+    background: blue;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  &__title{ 
+    margin: 20px 0 20px 0;
+  }
+
+  &__list{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-gap: 10px;
+
+    .specifications{
+      list-style: none;
+    }
+  }
+}
